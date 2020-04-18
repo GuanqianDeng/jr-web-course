@@ -10,13 +10,20 @@
   <script src="https://kit.fontawesome.com/77dce36495.js" crossorigin="anonymous"></script>
   
 </head>
-
+  <!-- 整体写的不错，都在正确的位置，
+  就是一些细节可以再改进一下就差不多是production ready了，
+  class命名可以用BEM的方法，比如card， card__header, card__header__left-icon, card__header__title, card__header__right-icon这样
+  css可以尝试用sass写一下，代码会精简不少
+  字体的话可以引用一个Google fonts再最上面，跟引用css一样
+  可以参考一下这个作业，做的很细致https://github.com/56tiagra/css-flex-prac
+-->
 <body>
   <div class="container">
     <!-- card 1 -->
     <div class="card">
       <div class="card-header">
         <div class="avatar">
+          <!-- 这个不需要用img，container boarder radius50%就可以实现 -->
           <img class="avatar-img"
             src="https://ui-avatars.com/api/?name=Guanqian+Deng&background=be6098&rounded=true&bold=true&color=fff&format=svg"
             alt="a profile picture">
