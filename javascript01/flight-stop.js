@@ -14,6 +14,16 @@ function getStops(flights) {
     console.log(totalStopStr)
   }
 }
+
+function getStops(flights) {
+  var length = flights.length
+
+  return {
+    1: 'direct',
+    2: '1 stop'
+  }[length] || (length - 1) + ' stops';
+}
+
 // getStops(flight)
 
 var income = 200000
